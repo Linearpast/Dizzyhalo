@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "dizzyhalo:diamond_armor"
+    },
+    {
+      "tag": "dizzyhalo:diamond_armor"
+    },
+    {
+      "tag": "dizzyhalo:diamond_armor"
+    },
+    {
+      "tag": "dizzyhalo:diamond_armor"
+    },
+    {
+      "tag": "dizzyhalo:diamond_armor"
+    }
+  ],
+  "result": {
+    "item": "dizzyhalo:fusion_armors"
+  }
+}

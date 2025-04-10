@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DA ",
+        "BBB",
+        "B B"
+    ],
+    "key": {
+        "B": {
+            "item": "minecraft:bone"
+        },
+        "D": {
+            "item": "minecraft:diamond_block"
+        },
+        "A": {
+            "item": "minecraft:saddle"
+        }
+    },
+    "result": {
+       "item": "dizzyhalo:daredevil"
+    }
+}

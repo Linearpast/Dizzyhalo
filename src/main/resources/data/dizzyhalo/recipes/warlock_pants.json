@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "III",
+        "IDI",
+        "B B"
+    ],
+    "key": {
+        "I": {
+            "item": "minecraft:iron_bars"
+        },
+        "D": {
+            "item": "minecraft:diamond"
+        },
+        "B": {
+            "item": "minecraft:blaze_powder"
+        }
+    },
+    "result": {
+       "item": "dizzyhalo:warlock_pants"
+    }
+}

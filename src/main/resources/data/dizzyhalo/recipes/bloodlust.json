@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XSX",
+        "XHX",
+        "XYX"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:redstone_block"
+        },
+        "S": {
+            "item": "minecraft:diamond"
+        },
+        "Y": {
+            "item": "minecraft:experience_bottle"
+        },
+        "H": {
+            "item": "minecraft:diamond_sword"
+        }
+    },
+    "result": {
+       "item": "dizzyhalo:bloodlust",
+       "count": 1,
+       "nbt": {
+         "Enchantments": [
+           {
+             "id": "minecraft:sharpness",
+             "lvl": 1
+           }
+         ]
+       }
+    }
+}

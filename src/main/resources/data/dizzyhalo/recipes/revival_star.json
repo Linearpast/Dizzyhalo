@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "DGD",
+        " C "
+    ],
+    "key": {
+        "C": {
+            "item": "minecraft:clock"
+        },
+        "D": {
+            "item": "minecraft:diamond"
+        },
+        "G": {
+            "item": "minecraft:enchanted_golden_apple"
+        }
+    },
+    "result": {
+       "item": "dizzyhalo:revival_star"
+    }
+}
