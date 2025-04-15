@@ -42,6 +42,7 @@ public class PlayerKillEvent {
                 fromPlayer.getInventory().add(new ItemStack(Items.GOLD_NUGGET, 32));
                 ItemStack playerHead = new ItemStack(Items.PLAYER_HEAD);
                 playerHead.getOrCreateTag().putString("SkullOwner", targetPlayer.getUUID().toString());
+                playerHead.setHoverName(targetPlayer.getDisplayName());
                 fromPlayer.getInventory().add(playerHead);
                 fromPlayer.getInventory().setChanged();
             }

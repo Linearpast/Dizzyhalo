@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "EYE",
+        "DCD",
+        "EYE"
+    ],
+    "key": {
+        "E": {
+            "item": "minecraft:fermented_spider_eye"
+        },
+        "Y": {
+            "item": "minecraft:nether_wart"
+        },
+        "D": {
+            "item": "minecraft:diamond"
+        },
+        "C": {
+            "item": "minecraft:crossbow"
+        }
+    },
+    "result": {
+       "item": "dizzyhalo:corrupted_crossbow"
+    }
+}

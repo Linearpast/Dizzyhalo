@@ -76,6 +76,11 @@ public class ModLangGen extends LanguageProvider {
         zhCnLang.put(ModItems.FUSION_LEGGINGS.get(), "§5聚变护腿");
         zhCnLang.put(ModItems.FUSION_BOOTS.get(), "§5聚变战靴");
         zhCnLang.put(ModItems.FUSION_ARMORS.get(), "§5聚变之甲");
+        zhCnLang.put(ModItems.BLAZING_CROSSBOW.get(), "§c烈焰弩");
+        zhCnLang.put(ModItems.WITHERING_AXE.get(), "§0凋零之斧");
+        zhCnLang.put(ModItems.CORRUPTED_CROSSBOW.get(), "§2剧毒之弩");
+        zhCnLang.put(ModItems.EMERALD_BLADE.get(), "§a绿宝石剑");
+        zhCnLang.put(ModItems.AIGLOS.get(), "§9艾格洛斯长矛");
         
         enUsLang.put(ModItems.WARLOCK_PANTS.get(), "§4warlocck pants");
         enUsLang.put(ModItems.BLOODLUST.get(), "§4blood lust");
@@ -87,5 +92,10 @@ public class ModLangGen extends LanguageProvider {
         enUsLang.put(ModItems.FUSION_LEGGINGS.get(), "§5fusion leggings");
         enUsLang.put(ModItems.FUSION_BOOTS.get(), "§5fusion boots");
         enUsLang.put(ModItems.FUSION_ARMORS.get(), "§5fusion armor");
+        enUsLang.put(ModItems.BLAZING_CROSSBOW.get(), "§cblazing crossbow");
+        enUsLang.put(ModItems.WITHERING_AXE.get(), "§0withering axe");
+        enUsLang.put(ModItems.CORRUPTED_CROSSBOW.get(), "§2corrupted crossbow");
+        enUsLang.put(ModItems.EMERALD_BLADE.get(), "§aemerald blade");
+        enUsLang.put(ModItems.AIGLOS.get(), "§9aiglos");
     }
 }

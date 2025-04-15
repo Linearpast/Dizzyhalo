@@ -1,0 +1,6 @@
+{
+  "parent": "dizzyhalo:item/blazing_crossbow",
+  "textures": {
+    "layer0": "dizzyhalo:item/blazing_crossbow/pulling_1"
+  }
+}

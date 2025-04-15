@@ -1,8 +1,7 @@
 package com.dizzyhalo.dizzyhalo.common.register;
 
 import com.dizzyhalo.dizzyhalo.Dizzyhalo;
-import com.dizzyhalo.dizzyhalo.common.register.item.DaredevilItem;
-import com.dizzyhalo.dizzyhalo.common.register.item.FusionArmorItem;
+import com.dizzyhalo.dizzyhalo.common.register.item.*;
 import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -43,7 +42,7 @@ public class ModItems {
     //fusion armor
     public static final RegistryObject<ArmorItem> FUSION_HELMET = REGISTER.register(
             "fusion_helmet", () ->
-                    new FusionArmorItem(
+                    new FusionArmor(
                             ModArmorMaterials.FUSION,
                             ArmorItem.Type.HELMET,
                             new Item.Properties().stacksTo(1)
@@ -51,7 +50,7 @@ public class ModItems {
     );
     public static final RegistryObject<ArmorItem> FUSION_CHESTPLATE = REGISTER.register(
             "fusion_chestplate", () ->
-                    new FusionArmorItem(
+                    new FusionArmor(
                             ModArmorMaterials.FUSION,
                             ArmorItem.Type.CHESTPLATE,
                             new Item.Properties().stacksTo(1)
@@ -59,7 +58,7 @@ public class ModItems {
     );
     public static final RegistryObject<ArmorItem> FUSION_LEGGINGS = REGISTER.register(
             "fusion_leggings", () ->
-                    new FusionArmorItem(
+                    new FusionArmor(
                             ModArmorMaterials.FUSION,
                             ArmorItem.Type.LEGGINGS,
                             new Item.Properties().stacksTo(1)
@@ -67,7 +66,7 @@ public class ModItems {
     );
     public static final RegistryObject<ArmorItem> FUSION_BOOTS = REGISTER.register(
             "fusion_boots", () ->
-                    new FusionArmorItem(
+                    new FusionArmor(
                             ModArmorMaterials.FUSION,
                             ArmorItem.Type.BOOTS,
                             new Item.Properties().stacksTo(1)
@@ -75,12 +74,43 @@ public class ModItems {
     );
     public static final RegistryObject<Item> FUSION_ARMORS = REGISTER.register(
             "fusion_armors", () ->
-                    new FusionArmorItem(
+                    new FusionArmor(
                             ModArmorMaterials.FUSION,
                             ArmorItem.Type.HELMET,
                             new Item.Properties().stacksTo(1)
                     )
     );
 
+    public static final RegistryObject<CrossbowItem> BLAZING_CROSSBOW = REGISTER.register(
+            "blazing_crossbow", () ->
+                    new FireCrossBow(new Item.Properties().stacksTo(1).durability(131))
+    );
 
+    public static final RegistryObject<Item> WITHERING_AXE = REGISTER.register(
+            "withering_axe", () ->
+                    new WitheringAxe(
+                            Tiers.DIAMOND,
+                            5.0f,
+                            -3.0f,
+                            new Item.Properties().stacksTo(1)
+                    )
+    );
+    public static final RegistryObject<CrossbowItem> CORRUPTED_CROSSBOW = REGISTER.register(
+            "corrupted_crossbow", () ->
+                    new PoisonCrossbow(new Item.Properties().stacksTo(1).durability(131))
+    );
+    public static final RegistryObject<SwordItem> EMERALD_BLADE = REGISTER.register(
+            "emerald_blade", () ->
+                    new EmeraldBlade(
+                            Tiers.DIAMOND,
+                            3,
+                            -2.4f,
+                            new Item.Properties().stacksTo(1),
+                            32
+                    )
+    );
+    public static final RegistryObject<Item> AIGLOS = REGISTER.register(
+            "aiglos", () ->
+                    new AiglosTrident(new Item.Properties().stacksTo(1).durability(270))
+    );
 }

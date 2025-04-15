@@ -18,8 +18,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Collection;
 
-public class FusionArmorItem extends ArmorItem {
-    public FusionArmorItem(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
+public class FusionArmor extends ArmorItem {
+    public FusionArmor(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
         super(pMaterial, pType, pProperties);
     }
 
@@ -90,10 +90,10 @@ public class FusionArmorItem extends ArmorItem {
             int duration = effectInstance.getDuration();
             int amplifier = effectInstance.getAmplifier();
             if(amplifier < 1 || duration < 20){
-                player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 300, 1, false, false));
+                player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 300, 0, false, false));
             }
         }else {
-            player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 300, 1, false, false));
+            player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 300, 0, false, false));
         }
     }
 }

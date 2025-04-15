@@ -1,0 +1,41 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " DP",
+        "DTG",
+        "HG "
+    ],
+    "key": {
+        "P": {
+            "item": "minecraft:ender_pearl"
+        },
+        "D": {
+            "item": "minecraft:diamond"
+        },
+        "T": {
+            "item": "minecraft:trident"
+        },
+        "H": {
+            "item": "minecraft:tnt"
+        },
+        "G": {
+            "item": "minecraft:gold_ingot"
+        }
+    },
+    "result": {
+        "item": "dizzyhalo:aiglos",
+        "count": 1,
+        "nbt": {
+            "Enchantments": [
+                {
+                    "id": "minecraft:loyalty",
+                    "lvl": 1
+                },
+                {
+                    "id": "minecraft:sharpness",
+                    "lvl": 1
+                }
+            ]
+        }
+    }
+}

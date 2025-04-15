@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "EDE",
+    " G "
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:diamond_sword"
+    },
+    "E": {
+      "item": "minecraft:emerald_block"
+    },
+    "G": {
+      "item": "minecraft:golden_carrot"
+    },
+    "B": {
+      "item": "minecraft:bell"
+    }
+  },
+  "result": {
+    "item": "dizzyhalo:emerald_blade",
+    "count": 1,
+    "nbt": {
+      "Enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " M ",
+        "FBF",
+        " M "
+    ],
+    "key": {
+        "F": {
+            "item": "minecraft:blaze_powder"
+        },
+        "B": {
+            "item": "minecraft:crossbow"
+        },
+        "M": {
+            "item": "minecraft:magma_cream"
+        }
+    },
+    "result": {
+       "item": "dizzyhalo:blazing_crossbow",
+        "count": 1,
+        "nbt": {
+            "Enchantments": [
+                {
+                    "id": "minecraft:quick_charge",
+                    "lvl": 1
+                },
+                {
+                    "id": "minecraft:unbreaking",
+                    "lvl": 1
+                }
+            ]
+        }
+    }
+}

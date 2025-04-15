@@ -32,6 +32,7 @@ public class ModItemModelGen extends ItemModelProvider {
         itemGenerateModel(ModItems.FUSION_LEGGINGS.get(), resourceItem(itemName(ModItems.FUSION_LEGGINGS.get())));
         itemGenerateModel(ModItems.FUSION_BOOTS.get(), resourceItem(itemName(ModItems.FUSION_BOOTS.get())));
         itemGenerateModel(ModItems.FUSION_ARMORS.get(), resourceItem(itemName(ModItems.FUSION_ARMORS.get())));
+        itemHandHeldGenerateModel(ModItems.WITHERING_AXE.get(), resourceItem(itemName(ModItems.WITHERING_AXE.get())));
     }
 
     public void itemGenerateModel(Item item, ResourceLocation location){
