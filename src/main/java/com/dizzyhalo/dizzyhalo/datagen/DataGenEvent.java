@@ -1,14 +1,12 @@
-package com.dizzyhalo.dizzyhalo.common.datagen;
+package com.dizzyhalo.dizzyhalo.datagen;
 
 import com.dizzyhalo.dizzyhalo.Dizzyhalo;
-import com.dizzyhalo.dizzyhalo.common.datagen.provider.ModBlockTagProvider;
-import com.dizzyhalo.dizzyhalo.common.datagen.provider.ModItemModelGen;
-import com.dizzyhalo.dizzyhalo.common.datagen.provider.ModItemTagGen;
-import com.dizzyhalo.dizzyhalo.common.datagen.provider.ModLangGen;
+import com.dizzyhalo.dizzyhalo.datagen.provider.ModItemModelGen;
+import com.dizzyhalo.dizzyhalo.datagen.provider.ModItemTagGen;
+import com.dizzyhalo.dizzyhalo.datagen.provider.ModLangGen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
-import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

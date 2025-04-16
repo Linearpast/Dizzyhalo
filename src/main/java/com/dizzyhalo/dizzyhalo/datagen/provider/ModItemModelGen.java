@@ -1,4 +1,4 @@
-package com.dizzyhalo.dizzyhalo.common.datagen.provider;
+package com.dizzyhalo.dizzyhalo.datagen.provider;
 
 import com.dizzyhalo.dizzyhalo.Dizzyhalo;
 import com.dizzyhalo.dizzyhalo.common.register.ModItems;
@@ -33,6 +33,7 @@ public class ModItemModelGen extends ItemModelProvider {
         itemGenerateModel(ModItems.FUSION_BOOTS.get(), resourceItem(itemName(ModItems.FUSION_BOOTS.get())));
         itemGenerateModel(ModItems.FUSION_ARMORS.get(), resourceItem(itemName(ModItems.FUSION_ARMORS.get())));
         itemHandHeldGenerateModel(ModItems.WITHERING_AXE.get(), resourceItem(itemName(ModItems.WITHERING_AXE.get())));
+        itemGenerateModel(ModItems.EXPERT_SEAL.get(), resourceItem(itemName(ModItems.EXPERT_SEAL.get())));
     }
 
     public void itemGenerateModel(Item item, ResourceLocation location){

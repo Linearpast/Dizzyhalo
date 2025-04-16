@@ -1,7 +1,6 @@
 package com.dizzyhalo.dizzyhalo.common.register;
 
 import net.minecraft.Util;
-import java.util.function.Supplier;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.LazyLoadedValue;
@@ -11,6 +10,7 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.EnumMap;
+import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements StringRepresentable, ArmorMaterial {
     WARLOCK("warlock", 15, Util.make(new EnumMap<>(ArmorItem.Type.class), (pConsumer) -> {

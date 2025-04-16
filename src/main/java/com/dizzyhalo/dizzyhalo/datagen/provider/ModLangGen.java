@@ -1,4 +1,4 @@
-package com.dizzyhalo.dizzyhalo.common.datagen.provider;
+package com.dizzyhalo.dizzyhalo.datagen.provider;
 
 import com.dizzyhalo.dizzyhalo.Dizzyhalo;
 import com.dizzyhalo.dizzyhalo.common.register.ModItems;
@@ -15,7 +15,7 @@ import java.util.HashMap;
 
 public class ModLangGen extends LanguageProvider {
 
-    private Lang lang;
+    private final Lang lang;
 
     public ModLangGen(PackOutput output, Lang lang) {
         super(output, Dizzyhalo.MODID, lang.getLangName());
@@ -81,6 +81,7 @@ public class ModLangGen extends LanguageProvider {
         zhCnLang.put(ModItems.CORRUPTED_CROSSBOW.get(), "§2剧毒之弩");
         zhCnLang.put(ModItems.EMERALD_BLADE.get(), "§a绿宝石剑");
         zhCnLang.put(ModItems.AIGLOS.get(), "§9艾格洛斯长矛");
+        zhCnLang.put(ModItems.EXPERT_SEAL.get(), "§d大师密卷");
         
         enUsLang.put(ModItems.WARLOCK_PANTS.get(), "§4warlocck pants");
         enUsLang.put(ModItems.BLOODLUST.get(), "§4blood lust");
@@ -97,5 +98,6 @@ public class ModLangGen extends LanguageProvider {
         enUsLang.put(ModItems.CORRUPTED_CROSSBOW.get(), "§2corrupted crossbow");
         enUsLang.put(ModItems.EMERALD_BLADE.get(), "§aemerald blade");
         enUsLang.put(ModItems.AIGLOS.get(), "§9aiglos");
+        enUsLang.put(ModItems.EXPERT_SEAL.get(), "§dexpert seal");
     }
 }

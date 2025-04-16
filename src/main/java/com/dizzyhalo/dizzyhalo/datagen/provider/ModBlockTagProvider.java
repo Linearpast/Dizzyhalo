@@ -1,4 +1,4 @@
-package com.dizzyhalo.dizzyhalo.common.datagen.provider;
+package com.dizzyhalo.dizzyhalo.datagen.provider;
 
 import com.dizzyhalo.dizzyhalo.Dizzyhalo;
 import net.minecraft.core.HolderLookup;

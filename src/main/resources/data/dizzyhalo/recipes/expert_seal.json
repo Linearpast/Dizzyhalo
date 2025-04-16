@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XIX",
+        "GDG",
+        "XIX"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:experience_bottle"
+        },
+        "I": {
+            "item": "minecraft:iron_block"
+        },
+        "G": {
+            "item": "minecraft:gold_block"
+        },
+        "D": {
+            "item": "minecraft:diamond_block"
+        }
+    },
+    "result": {
+       "item": "dizzyhalo:expert_seal",
+       "count": 2
+    }
+}

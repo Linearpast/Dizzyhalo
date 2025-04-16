@@ -1,8 +1,9 @@
-package com.dizzyhalo.dizzyhalo.common.network;
+package com.dizzyhalo.dizzyhalo.network;
 
 import com.dizzyhalo.dizzyhalo.Dizzyhalo;
-import com.dizzyhalo.dizzyhalo.common.network.toclient.ParticlesPacket;
-import com.dizzyhalo.dizzyhalo.common.network.toclient.TotemRenderPacket;
+import com.dizzyhalo.dizzyhalo.network.toclient.ParticlesPacket;
+import com.dizzyhalo.dizzyhalo.network.toclient.TotemRenderPacket;
+import com.dizzyhalo.dizzyhalo.network.toserver.EnchantLevelUpPacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.NetworkDirection;
@@ -31,6 +32,13 @@ public class Channel {
                 .encoder(ParticlesPacket::encode)
                 .consumerNetworkThread(ParticlesPacket::handle)
                 .add();
+
+        INSTANCE.messageBuilder(EnchantLevelUpPacket.class, cid++, NetworkDirection.PLAY_TO_SERVER)
+                .decoder(EnchantLevelUpPacket::new)
+                .encoder(EnchantLevelUpPacket::encode)
+                .consumerNetworkThread(EnchantLevelUpPacket::handle)
+                .add();
+
     }
 
     public static <MSG> void sendToPlayer(MSG message, ServerPlayer player){
@@ -39,5 +47,7 @@ public class Channel {
     public static <MSG> void sendAllPlayer(MSG message){
         INSTANCE.send(PacketDistributor.ALL.noArg(), message);
     }
-
+    public static <MSG> void sendServer(MSG message){
+        INSTANCE.send(PacketDistributor.SERVER.noArg(), message);
+    }
 }

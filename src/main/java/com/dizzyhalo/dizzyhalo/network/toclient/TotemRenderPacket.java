@@ -1,8 +1,7 @@
-package com.dizzyhalo.dizzyhalo.common.network.toclient;
+package com.dizzyhalo.dizzyhalo.network.toclient;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.network.NetworkEvent;

@@ -1,11 +1,10 @@
 package com.dizzyhalo.dizzyhalo.common.event;
 
 import com.dizzyhalo.dizzyhalo.Dizzyhalo;
-import com.dizzyhalo.dizzyhalo.common.network.Channel;
-import com.dizzyhalo.dizzyhalo.common.network.toclient.TotemRenderPacket;
 import com.dizzyhalo.dizzyhalo.common.register.ModItems;
+import com.dizzyhalo.dizzyhalo.network.Channel;
+import com.dizzyhalo.dizzyhalo.network.toclient.TotemRenderPacket;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ItemStack;

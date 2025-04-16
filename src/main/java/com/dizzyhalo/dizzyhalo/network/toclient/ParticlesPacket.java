@@ -1,4 +1,4 @@
-package com.dizzyhalo.dizzyhalo.common.network.toclient;
+package com.dizzyhalo.dizzyhalo.network.toclient;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;

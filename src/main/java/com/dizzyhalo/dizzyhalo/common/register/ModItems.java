@@ -113,4 +113,8 @@ public class ModItems {
             "aiglos", () ->
                     new AiglosTrident(new Item.Properties().stacksTo(1).durability(270))
     );
+    public static final RegistryObject<Item> EXPERT_SEAL = REGISTER.register(
+            "expert_seal", () ->
+                    new Item(new Item.Properties().stacksTo(16))
+    );
 }

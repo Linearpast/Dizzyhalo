@@ -13,9 +13,15 @@ plugins {
     id 'idea'
     id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
+    id 'org.spongepowered.mixin' version '0.7.+'
 }
 
 apply plugin: 'org.spongepowered.mixin'
+
+mixin {
+    add sourceSets.main, "dizzyhalo.refmap.json"  // 替换为你的refmap文件名
+    config "dizzyhalo.mixins.json"               // 替换为你的Mixin配置文件名
+}
 
 group = mod_group_id
 version = mod_version
